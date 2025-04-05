@@ -1,3 +1,6 @@
+
+![image](https://github.com/user-attachments/assets/3e2ba871-123f-4a4b-ab95-1231f029d43d)
+
 🔧 What It Does
 Waits for pin 2 to go LOW (connected to GND).
 

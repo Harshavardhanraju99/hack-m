@@ -72,7 +72,6 @@ Sleep/Wake functionality
 
 ---
 
-Let me know if you'd like me to customize it with your name, project link, or add screenshots/badges!
 
 
 

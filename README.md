@@ -37,4 +37,48 @@ When pin **D2** is connected to **GND**, the Arduino sends a sequence of keystro
    ```cpp
    int platform = WINDOWS; // Change to OSX or UBUNTU as needed
 
+Upload to your Arduino Leonardo/Micro.
+
+Press the button or short D2 to GND to trigger.
+
+🖥️ Platform Logic
+Platform	Key Sequence Sent	Action
+WINDOWS	Win + L	Lock PC
+OSX	Cmd + Shift + Q + Enter	Logout
+UBUNTU	Ctrl + Alt + Del + Enter	Logout
+🚧 Important Notes
+This only works on boards that support USB HID like Leonardo or Micro.
+
+Do not use this without permission on someone else's device.
+
+Timing delays may need adjustment depending on system speed.
+
+📸 Demo (Optional GIF or image)
+Add a demo GIF or photo here if available.
+
+📄 License
+This project is released into the public domain.
+
+🤝 Contributing
+Feel free to fork and submit pull requests for improvements, bug fixes, or extra features like:
+
+Dynamic OS selection
+
+LED indicators
+
+Sleep/Wake functionality
+
+👨‍💻 Created by: [Harsha Vardhan Raju.Yerra]
+
+---
+
+Let me know if you'd like me to customize it with your name, project link, or add screenshots/badges!
+
+
+
+
+
+
+
+
 

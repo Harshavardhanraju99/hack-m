@@ -69,6 +69,7 @@ LED indicators
 Sleep/Wake functionality
 
 👨‍💻 Created by: [Harsha Vardhan Raju.Yerra]
+![image](https://github.com/user-attachments/assets/45d712e4-d9bf-4d85-8a75-9b4979e07647)
 
 ---
 

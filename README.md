@@ -1,44 +1,40 @@
 
 ![image](https://github.com/user-attachments/assets/3e2ba871-123f-4a4b-ab95-1231f029d43d)
 
-🔧 What It Does
-Waits for pin 2 to go LOW (connected to GND).
+# 🔒 Arduino Keyboard Logout & Lock Trigger
 
-Based on the selected platform (WINDOWS, UBUNTU, or OSX), it sends the appropriate keyboard combination to initiate logout:
+This project demonstrates how to use an **Arduino Leonardo** or **Arduino Micro** to simulate keyboard actions that **log out** or **lock** a computer with the press of a button.
 
-Windows: Ctrl + Alt + Delete, then Alt + L (logs off the user).
+When pin **D2** is connected to **GND**, the Arduino sends a sequence of keystrokes depending on your selected platform:
+- 🔐 **Windows**: Locks the screen (`Win + L`)
+- 🔒 **macOS**: Logs out using `Cmd + Shift + Q`, then `Enter`
+- 🔓 **Ubuntu**: Triggers logout using `Ctrl + Alt + Del`, then `Enter`
 
-Ubuntu: Ctrl + Alt + Delete, then Enter (confirms logout).
+> ⚠️ Make sure you understand what each combination does before testing on your system.
 
-macOS: Cmd + Shift + Q, then Return (confirms logout).
+---
 
-It then halts by entering an infinite loop (while(true);).
+## 🧠 How It Works
 
-🔌 Hardware Requirements
-Arduino Micro or Leonardo (because they support native USB HID).
+- Uses the **Arduino Keyboard library** to send keyboard commands over USB.
+- Detects a digital input (pin D2) connected to **GND**.
+- Sends OS-specific key sequences based on the configured platform.
 
-A push button or jumper wire to connect pin 2 to GND.
+---
 
-Optional: Pull-down resistor if not using INPUT_PULLUP (but it's handled in the code already).
+## 🛠️ Requirements
 
-#✅ How to Use
-#Upload the sketch to your Arduino Leonardo/Micro.
+- Arduino **Leonardo** or **Micro**
+- Jumper wire or button to connect **D2 to GND**
+- Arduino IDE installed with the `Keyboard` library
 
-Set the correct platform by changing:
+---
 
-int platform = WINDOWS;
-to your current OS.
+## ⚙️ Setup
 
-Connect D2 to GND (via button or jumper) to trigger logout.
+1. Clone the repo and open the `.ino` file in the Arduino IDE.
+2. Set your platform inside the code:
+   ```cpp
+   int platform = WINDOWS; // Change to OSX or UBUNTU as needed
 
-⚠️ Safety Tips
-Be careful when testing—this will log you out immediately.
 
-Don’t leave this running plugged into someone’s computer unless it’s part of a controlled demo or you have permission (ethical hacking rules apply!).
-
-💡 Optional Improvements
-Add a debounce for the button.
-
-Add LED indicator for status.
-
-Add EEPROM or serial input to change the OS dynamically.

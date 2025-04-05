@@ -70,6 +70,8 @@ Sleep/Wake functionality
 
 👨‍💻 Created by: [Harsha Vardhan Raju.Yerra]
 ![image](https://github.com/user-attachments/assets/45d712e4-d9bf-4d85-8a75-9b4979e07647)
+![WhatsApp Image 2025-04-05 at 23 15 12_b086874a](https://github.com/user-attachments/assets/5bb62302-bf06-4ad5-97af-96a73235c5dc)
+![WhatsApp Image 2025-04-05 at 23 17 39_fb487924](https://github.com/user-attachments/assets/3735b218-9693-462e-8901-caf1ce8511f8)
 
 ---
 
